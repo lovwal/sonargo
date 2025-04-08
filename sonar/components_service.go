@@ -32,6 +32,7 @@ type Component struct {
 	Organization     string          `json:"organization,omitempty"`
 	Path             string          `json:"path,omitempty"`
 	Project          string          `json:"project,omitempty"`
+	Revision         string          `json:"revision,omitempty"`
 	Qualifier        string          `json:"qualifier,omitempty"`
 	Tags             []string        `json:"tags,omitempty"`
 	UUID             string          `json:"uuid,omitempty"`
