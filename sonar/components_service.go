@@ -27,6 +27,7 @@ type Component struct {
 	LastAnalysisDate string          `json:"lastAnalysisDate,omitempty"`
 	LeakPeriodDate   string          `json:"leakPeriodDate,omitempty"`
 	LongName         string          `json:"longName,omitempty"`
+	Managed          bool            `json:"managed,omitempty"`
 	Measures         []*SonarMeasure `json:"measures,omitempty"`
 	Name             string          `json:"name,omitempty"`
 	Organization     string          `json:"organization,omitempty"`
