@@ -1,4 +1,4 @@
-module sonargo
+module github.com/lovwal/sonargo
 
 go 1.23.6
 
