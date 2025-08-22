@@ -17,7 +17,7 @@ type MeasuresComponentObject struct {
 
 type SonarMeasure struct {
 	Metric    string     `json:"metric,omitempty"`
-	Period    Period     `json:"period,omitempty"`
+	Periods   []*Period  `json:"periods,omitempty"`
 	Value     string     `json:"value,omitempty"`
 	Histories []*History `json:"history,omitempty"`
 	BestValue bool       `json:"bestValue,omitempty"`
