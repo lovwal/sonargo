@@ -12,7 +12,7 @@ type MeasuresService struct {
 type MeasuresComponentObject struct {
 	Component *Component `json:"component,omitempty"`
 	Metrics   []*Metric  `json:"metrics,omitempty"`
-	Period    Period     `json:"period,omitempty"`
+	Periods   []*Period  `json:"periods,omitempty"`
 }
 
 type SonarMeasure struct {
