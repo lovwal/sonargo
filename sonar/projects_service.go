@@ -137,6 +137,7 @@ func (s *ProjectsService) Delete(opt *ProjectsDeleteOption) (resp *http.Response
 type ProjectsSearchOption struct {
 	AnalyzedBefore    string `url:"analyzedBefore,omitempty"`    // Description:"Filter the projects for which last analysis is older than the given date (exclusive).<br> Either a date (server timezone) or datetime can be provided.",ExampleValue:"2017-10-19 or 2017-10-19T13:00:00+0200"
 	OnProvisionedOnly string `url:"onProvisionedOnly,omitempty"` // Description:"Filter the projects that are provisioned",ExampleValue:""
+	Organization      string `url:"organization,omitempty"`      // Description:"The key of the organization, REQUIRED",ExampleValue:""
 	P                 string `url:"p,omitempty"`                 // Description:"1-based page number",ExampleValue:"42"
 	ProjectIds        string `url:"projectIds,omitempty"`        // Description:"Comma-separated list of project ids",ExampleValue:"AU-Tpxb--iU5OvuD2FLy,AU-TpxcA-iU5OvuD2FLz"
 	Projects          string `url:"projects,omitempty"`          // Description:"Comma-separated list of project keys",ExampleValue:"my_project,another_project"
